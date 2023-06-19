@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jquery</title>
+  </head>
+  <body>
+    <div id="text">j Query</div>
+    <button id="btn1" >Change text</button>
+     <div >
+       <img id="img1" src="BurgerImage1.png">
+     </div>
+    
+<script type="text/javascript"src="js/jquery.js" ></script>
+<script type="text/javascript" >
+  // $("#text").text('Hello NEW text');
+  $("#btn1").click(function (){
+    $("#text").fadeOut()
+    $("#text").text('Hello NEW text');
+    $("#text").fadeIn(3000);
+  });
+  $("#img1").click(function(){
+    $(this).attr("src","BurgerImage2.png");
+  })
+  $()
+</script>
+     </body>
+  
+</html>
